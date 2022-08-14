@@ -252,4 +252,35 @@
 
 // ***********************************************************************************************************************************
 
-// 11.20 Проверяется правильность введенного логина строго из 5 букв и пароля из 6 и более цифр
+// 11.10 Проверяется правильность введенного логина строго из 5 букв и пароля из 6 и более цифр
+
+// Console.Clear();
+// string myLog = "qwert";
+// int myPass = 123456;
+// string mes = " ", mesYes = "Добро пожаловать!", mesNo = "Вход воспрещен!";
+
+
+// Console.WriteLine("Введите логин: ");
+// string log = Console.ReadLine();
+
+// if (log.Length != 5) mes = "Логин не подходит по размеру. " + mesNo;
+// else if (log != myLog) mes = "Неверный логин. " + mesNo;
+// else
+
+// {
+//     Console.WriteLine("Введите пароль: ");
+//     int pass = Convert.ToInt32(Console.ReadLine());
+
+//     if (pass < 6) mes = "Пароль слишком короткий. " + mesNo;
+//     else if (pass != myPass) mes = "Неверный пароль. " + mesNo;
+//     else mes = mesYes;
+// }
+
+// Console.WriteLine(mes);
+
+
+
+
+
+
+
