@@ -207,22 +207,26 @@
 
 // Console.WriteLine("Введите число для сравнения: ");
 // int num = Convert.ToInt32(Console.ReadLine());
+// string message = "";
+
 
 // for (int i = 0; i < myArray.Length; i++)
 // {
-//    if(myArray[i] == num)
-//    {
-//     Console.WriteLine($"Число {num} присутствует в массиве"); break;
-//    }
-
-//    else
-//    {
-//     Console.WriteLine($"Числа {num} в массиве нет");
-//    }
+//     if (myArray[i] == num)
+//     {
+//         message = "присутствет в массиве";
+//     }
 // }
 
+// if (message == "присутствет в массиве")
+// {
+//     Console.WriteLine($"Число {num} {message}");
+// }
 
-// ДОДЕЛАТЬ
+// else
+// {
+//     Console.WriteLine($"Числа {num} в массиве нет");
+// }
 
 
 //Зал
@@ -283,17 +287,41 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
-// int[] myArray = CreateRandomArray(123, 0, 200);
+// int[] CreateRandomArray(int N, int start, int end)
+// {
+//     int[] RandomArray = new int[N];
+//     for (int i = 0; i < N; i++)
+//     {
+//         RandomArray[i] = new Random().Next(start, end + 1);
+//     }
+//     return RandomArray;
+// }
+
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.Clear();
+// int[] myArray = CreateRandomArray(12, 0, 200);
 // ShowArray(myArray);
+// int count = 0;
+
 // for (int i = 0; i < myArray.Length; i++)
 // {
 //     if (myArray[i] >= 10 && myArray[i] <= 99)
 //     {
 //         Console.Write($"{myArray[i]}"+ "|");
+//         count++;
 //     }
-//     else
-//     Console.Write("-");
 // }
+// Console.WriteLine();
+// Console.WriteLine($"{count} элементов массива находятся в диапазоне от 10 до 99");
 
 
 
@@ -322,7 +350,7 @@
 //     Console.WriteLine();
 // }
 
-// int[] myArray = CreateRandomArray(12, -9, 9);
+// int[] myArray = CreateRandomArray(4, -9, 9);
 // ShowArray(myArray);
 
 // int result = 0;
