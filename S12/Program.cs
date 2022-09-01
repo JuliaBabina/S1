@@ -33,6 +33,22 @@
 //     return (start + " " + PrintNumbers(start + 1, end));
 // }
 
+//ИЛИ
+
+// int PrintNumbers(int start, int end)
+// {
+//     Console.Write($"{start} ");
+//     if (start == end) return start;
+//     return  PrintNumbers(start + 1, end);
+// }
+
+// Console.Clear();
+// Console.Write("Введите M: ");
+// int numberM=int.Parse(Console.ReadLine()!);
+// Console.Write("Введите N: ");
+// int numberN=int.Parse(Console.ReadLine()!);
+
+// PrintNumbers(numberM,numberN);
 
 
 
@@ -61,6 +77,22 @@
     
 // }
 
+// ИЛИ
+
+//Напишите программу, которая будет принимать на вход 
+//число и возвращать сумму его цифр.
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int m = int.Parse(Console.ReadLine());
+
+// Console.WriteLine($"{m}->{SumNumbers(m)}");
+
+// int SumNumbers(int number)
+// {
+//     if (number == 0) return 0;
+//     return (number % 10 + SumNumbers(number / 10));
+//}
 
 
 // Задача 69: Напишите программу, которая на вход принимает два числа A и B, и возводит число А в целую степень B с помощью рекурсии.
@@ -88,3 +120,41 @@
 // }
     
 // }
+
+// ИЛИ
+
+//Напишите программу, которая на вход принимает два числа A и B, 
+//и возводит число А в целую степень B с помощью рекурсии.
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int m = int.Parse(Console.ReadLine());
+// Console.Write("Введите степень: ");
+// int n = int.Parse(Console.ReadLine());
+
+// Console.WriteLine($"{Pow(m,n)}");
+
+// int Pow(int number,int rank)
+// {
+//     if (rank == 0) return 1;
+//     if(rank==1) return number;
+//     return (number * Pow(number,rank-1));
+// }
+
+
+//ИЛИ
+
+// Console.Write("Введите базовое Число: ");
+// int baseVal = int.Parse(Console.ReadLine());
+
+// Console.Write("Введите степень Число: ");
+// int exp = int.Parse(Console.ReadLine());
+
+// int power(int baseValue, int exp) {
+//     if (exp == 0) {
+//         return 1;
+//     } else {
+//         return  baseValue * power(baseValue, exp -1);
+//     }
+// }
+// Console.Write("В степен: " + power(baseVal, exp));
